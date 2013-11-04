@@ -176,12 +176,6 @@ if __name__ == "__main__":
                             except:
                                     pass
                     print name
-                    #Tag the file for already scanned, this will not be scanned again
-                    if "{SFR}" not in filename:
-                        os.rename(filename+ext,filename+"{SFR}"+ext)
-                        filename=filename+"{SFR}"
-                    else:
-                        continue
                         
                     if "Rotten Rating" not in filename:
                         rt = RottenTomatoesRating(name)
