@@ -1,29 +1,40 @@
 Movie Ratings
 =============
 
-Author:      Laszlo Szathmary (jabba.laci@gmail.com)
-Date:        March, 2011
+Author:      Rajat Goyal
+Date:        November, 2013
 
-Home page:   https://pythonadventures.wordpress.com/2011/03/25/get-the-imdb-rating-of-a-movie/
-             https://pythonadventures.wordpress.com/2011/03/26/get-the-rottentomatoes-rating-of-a-movie/
-GitHub:      https://github.com/jabbalaci/Movie-Ratings
+Forked from GitHub:      https://github.com/jabbalaci/Movie-Ratings
 
 This free software is copyleft licensed under the same terms as Python, or,
 at your option, under version 2 of the GPL license.
 
+Function
+========
+The MovieRatings.py scripts replaces the filename of existing movies with a new filename which appends the
+rotten tomtatoes and imdb rating.
+
 Get the ratings of a movie from IMDB (http://www.imdb.com/)
 and Rotten Tomatoes (http://www.rottentomatoes.com/).
 
+EXAMPLE
+=======
+Samples of the files that are changed when i ran this script on my movies fodler:
+12.Angry.men.1957.m720p.400MB.mkv changed to 12.Angry.men.1957.m720p.400MB Rotten Rating-92% IMDB Rating-8.9.mkv
+21.&.Over.2013.720p@Kvothe.mkv changed to 21.&.Over.2013.720p@Kvothe Rotten Rating-36% IMDB Rating-6.7.mkv
 
-EXAMPLES
+HOW-TO
+=======
+Change The movie Directory Path in MovieRatings.py, This is where the program will look for movies.
+#Movie Directory Path
+moviesDirectory="H:\\"
 
-./imdb2.py 'the untouchables'
-    http://www.imdb.com/title/tt0094226/
-    The Untouchables
-    8.0
+and run the script:
+python MovieRatings.py
 
-./rottentomatoes2.py 'the untouchables'
-    http://www.rottentomatoes.com/m/untouchables/
-    The Untouchables
-    81%
-    87%
+Requirements
+============
+BeautifulSoup and Mechanize 
+
+Install Using pip:
+pip install BeautifulSoup,Mechanize 

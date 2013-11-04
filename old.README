@@ -1,0 +1,29 @@
+Movie Ratings
+=============
+
+Author:      Laszlo Szathmary (jabba.laci@gmail.com)
+Date:        March, 2011
+
+Home page:   https://pythonadventures.wordpress.com/2011/03/25/get-the-imdb-rating-of-a-movie/
+             https://pythonadventures.wordpress.com/2011/03/26/get-the-rottentomatoes-rating-of-a-movie/
+GitHub:      https://github.com/jabbalaci/Movie-Ratings
+
+This free software is copyleft licensed under the same terms as Python, or,
+at your option, under version 2 of the GPL license.
+
+Get the ratings of a movie from IMDB (http://www.imdb.com/)
+and Rotten Tomatoes (http://www.rottentomatoes.com/).
+
+
+EXAMPLES
+
+./imdb2.py 'the untouchables'
+    http://www.imdb.com/title/tt0094226/
+    The Untouchables
+    8.0
+
+./rottentomatoes2.py 'the untouchables'
+    http://www.rottentomatoes.com/m/untouchables/
+    The Untouchables
+    81%
+    87%
